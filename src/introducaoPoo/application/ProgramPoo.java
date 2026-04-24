@@ -7,21 +7,21 @@ public class ProgramPoo {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
+        //Cria dois objetos da classe Triangle (instâncias)
         Triangle x = new Triangle();
         Triangle y = new Triangle();
 
         System.out.println("Enter the measures of triangle X: ");
-        x.a = sc.nextDouble();
+        x.a = sc.nextDouble(); // Atribui valores aos atributos do objeto x
         x.b = sc.nextDouble();
         x.c = sc.nextDouble();
 
         System.out.println("Enter the measures of triangle Y: ");
-        y.a = sc.nextDouble();
+        y.a = sc.nextDouble();  // Atribui valores aos atributos do objeto y
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
 
-        double areaX = x.area();
-
+        double areaX = x.area();  // Calcula a área do triângulo X e ychamando o metodo da classe
         double areaY = y.area();
 
         System.out.printf("Triangle X area: %.4f%n", areaX);
